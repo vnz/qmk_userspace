@@ -46,21 +46,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  |  _   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |      |
+ * | Apps |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |PrtScr|   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   :  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   <  |   >  |   ?  |ALTENT|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      | TabL | TabR |      |
+ * |      |      |      |      |      |      |      |      | VDLt | TabL | TabR | VDRt |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_5x12(
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
-  _______, S(KC_Q), S(KC_W), S(KC_E), S(KC_R), S(KC_T), S(KC_Y), S(KC_U), S(KC_I), S(KC_O), S(KC_P), _______,
+  LX_APPS, S(KC_Q), S(KC_W), S(KC_E), S(KC_R), S(KC_T), S(KC_Y), S(KC_U), S(KC_I), S(KC_O), S(KC_P), _______,
   KC_PSCR, S(KC_A), S(KC_S), S(KC_D), S(KC_F), S(KC_G), S(KC_H), S(KC_J), S(KC_K), S(KC_L), KC_COLN, KC_DQUO,
   _______, S(KC_Z), S(KC_X), S(KC_C), S(KC_V), S(KC_B), S(KC_N), S(KC_M), KC_LABK, KC_RABK, KC_QUES, ALTENT,
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, ST_TBLT, ST_TBRT, _______
+  _______, _______, _______, _______, _______, _______, _______, _______, LX_VDLT, ST_TBLT, ST_TBRT, LX_VDRT
 ),
 
 /* Raise (French accents - positioned on base letter)
