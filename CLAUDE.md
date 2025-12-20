@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## GitHub Repository
+
+**This repo:** `vnz/qmk_userspace` (NOT `qmk/qmk_userspace`)
+
+When creating PRs, always target `vnz/qmk_userspace` - this is a personal userspace, not an upstream contribution.
+
 ## Build Commands
 
 Build all targets defined in qmk.json:
@@ -31,7 +37,7 @@ This is a **QMK Userspace** repository - an external overlay that manages keyboa
 - **`users/vnz/`** - Shared code included by all vnz keymaps
   - `vnz.h` - Custom keycode macros (Linux shortcuts, tab switching, etc.)
   - `vnz_unicode.h` - French accented character mappings (é, è, ê, à, ç, €, etc.)
-  - `config.h` - Global settings (UNICODE_MODE_LINUX, FORCE_NKRO)
+  - `config.h` - Global settings (UNICODE_MODE_LINUX, NKRO_DEFAULT_ON)
 
 - **`keyboards/<vendor>/<model>/keymaps/vnz/`** - Per-keyboard keymaps
   - `keymap.c` - Layer definitions (_BASE, _LOWER, _RAISE, _ADJUST)
@@ -54,7 +60,8 @@ This is a **QMK Userspace** repository - an external overlay that manages keyboa
 | LX_PSTE   | Shift+Ctrl+V (terminal paste)   |
 | ST_COPY   | Ctrl+C (standard copy)          |
 | LX_APPS   | Alt+Esc (app switcher)          |
-| LX_VDUP   | Ctrl+Alt+Up (virtual desktop)   |
+| LX_VDLT   | Ctrl+Alt+Left (desktop left)    |
+| LX_VDRT   | Ctrl+Alt+Right (desktop right)  |
 | ST_TBLT   | Ctrl+PgUp (tab left)            |
 | ST_TBRT   | Ctrl+PgDn (tab right)           |
 
