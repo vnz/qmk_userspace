@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust (Lower + Raise = Uppercase French accents + brackets)
  * ,-----------------------------------------------------------------------------------.
- * |Static|  F11 |  F12 |  F13 |  F14 |  F15 |  F16 |  F17 |  F18 |  F19 |  F20 |   =  |
+ * |RGBtog|  F11 |  F12 |  F13 |  F14 |  F15 |  F16 |  F17 |  F18 |  F19 |  F20 |   =  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |   Â  |   Ê  |   É  |   |  |   {  |   }  |   Ù  |   Î  |   Ô  |   Œ  | Ins  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -98,10 +98,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_ortho_5x12(
-  RGB_M_P, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  KC_EQL,
+  UG_TOGG, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  KC_EQL,
   _______, FR_AM2,  FR_EM3,  FR_EM1,  KC_PIPE, KC_LCBR, KC_RCBR, FR_UM2,  FR_IM1,  FR_OM1,  FR_OM2,  KC_INS,
   QK_BOOT, FR_AM1,  FR_EM4,  FR_EM2,  KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, FR_IM2,  FR_UM1,  FR_UM3,  _______,
-  _______, RGB_MOD, RGB_HUI, FR_CM1,  UC_MAC,  UC_WINC, NK_TOGG, UC_LINX, RGB_VAI, RGB_SAI, KC_BSLS, RGB_TOG,
-  _______, RGB_RMOD,RGB_HUD, _______, _______, _______, _______, _______, RGB_VAD, RGB_SAD, _______, _______
+  _______, UG_NEXT, UG_HUEU, FR_CM1,  UC_MAC,  UC_WINC, NK_TOGG, UC_LINX, UG_VALU, UG_SATU, KC_BSLS, UG_TOGG,
+  _______, UG_PREV, UG_HUED, _______, _______, _______, _______, _______, UG_VALD, UG_SATD, _______, _______
 )
 };
