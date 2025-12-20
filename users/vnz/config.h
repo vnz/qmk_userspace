@@ -2,4 +2,4 @@
     #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 #endif
 
-#define NKRO_DEFAULT_ON
+#define NKRO_DEFAULT_ON true
