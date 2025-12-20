@@ -24,6 +24,10 @@
 #define LX_VDLT C(A(KC_LEFT))
 #define LX_VDRT C(A(KC_RGHT))
 
+// Legacy vertical virtual desktop switching (for vnz_legacy keymap)
+#define LX_VDUP C(A(KC_UP))
+#define LX_VDDW C(A(KC_DOWN))
+
 // Switch between tabs
 #define ST_TBLT C(KC_PGUP)
 #define ST_TBRT C(KC_PGDN)
