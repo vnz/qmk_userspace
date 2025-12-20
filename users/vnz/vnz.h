@@ -20,7 +20,11 @@
 #define LX_APPS A(KC_ESC)
 #define LX_NAPP S(A(KC_ESC))
 
-// Linux switch between virtual desktop
+// Linux switch between virtual desktop (horizontal in Gnome)
+#define LX_VDLT C(A(KC_LEFT))
+#define LX_VDRT C(A(KC_RGHT))
+
+// Legacy vertical virtual desktop switching (for vnz_legacy keymap)
 #define LX_VDUP C(A(KC_UP))
 #define LX_VDDW C(A(KC_DOWN))
 

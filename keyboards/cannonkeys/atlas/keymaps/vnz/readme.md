@@ -1,9 +1,5 @@
-# CannonKeys Atlas
+# Atlas vnz keymap
 
-How to build:
+Current active keymap. See `vnz_legacy` for the previous version.
 
-```bash
-qmk compile -kb cannonkeys/atlas -km vnz
-```
-
-This includes files from `/users/vnz`.
+Includes shared code from `/users/vnz/` for French unicode characters and Linux shortcuts.
