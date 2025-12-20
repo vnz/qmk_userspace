@@ -9,6 +9,7 @@
         ["treasure/type9s2", "vnz"],
         ["bolsa/damapad", "vnz"],
         ["boardsource/lulu/rp2040", "vnz"],
-        ["boardsource/lulu/rp2040", "default"]
+        ["boardsource/lulu/rp2040", "default"],
+        ["ai03/altair", "vnz"]
     ]
 }
