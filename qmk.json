@@ -1,5 +1,5 @@
 {
-    "userspace_version": "1.0",
+    "userspace_version": "1.1",
     "build_targets": [
         ["cannonkeys/atlas", "vnz"],
         ["preonic/rev3", "vnz"],
@@ -8,6 +8,7 @@
         ["capsunlocked/cu7", "vnz"],
         ["treasure/type9s2", "vnz"],
         ["bolsa/damapad", "vnz"],
-        ["boardsource/lulu/rp2040", "vnz"]
+        ["boardsource/lulu/rp2040", "vnz"],
+        ["boardsource/lulu/rp2040", "default"]
     ]
 }
